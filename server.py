@@ -109,14 +109,20 @@ def build_character_svg(char: dict, cx: int, cy: int, scale: float = 1.0, expres
     eye_r = int(5 * scale)
     eye_y = cy - int(2 * scale)
     eye_offset = int(12 * scale)
-    feat = FEATURES["eyes"].get(char.get("eye_style", "round"))
+    eye_style = char.get("eye_style", "round")
+    feat = FEATURES["eyes"].get(eye_style)
     if feat:
-        parts.append(feat.format(
-            x=cx - eye_offset - eye_r//2, x2=cx - eye_offset + eye_r//2, y=eye_y, r=eye_r, color=eye_color,
-            x1=cx - eye_offset - 8, xm=cx - eye_offset, x2=cx - eye_offset + 8, yd=eye_y + 3,
-            x3=cx + eye_offset - 8, xm2=cx + eye_offset, x4=cx + eye_offset + 8, xm3=cx, yd2=eye_y + 3,
-            color=eye_color
-        ))
+        if eye_style == "round":
+            parts.append(feat.format(
+                x=cx - eye_offset, x2=cx + eye_offset,
+                y=eye_y, y2=eye_y, r=eye_r, color=eye_color
+            ))
+        else:
+            parts.append(feat.format(
+                x1=cx - eye_offset - 8, xm=cx - eye_offset, x2=cx - eye_offset + 8,
+                x3=cx + eye_offset - 8, xm2=cx + eye_offset, x4=cx + eye_offset + 8,
+                y=eye_y, yd=eye_y + 3, color=eye_color
+            ))
     
     # Mouth
     mouth_y = cy + int(10 * scale)
