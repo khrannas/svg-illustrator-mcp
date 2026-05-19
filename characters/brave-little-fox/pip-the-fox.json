@@ -1,0 +1,11 @@
+{
+  "name": "Pip the Fox",
+  "colors": {
+    "skin": "#FF6B35",
+    "hair": "#FF8C00",
+    "eyes": "#5C3A21",
+    "outfit": "#FF6B35"
+  },
+  "eye_style": "round",
+  "expression": "worried"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Mama Fox",
+  "colors": {
+    "skin": "#D4522A",
+    "hair": "#A0522D",
+    "eyes": "#5C3A21",
+    "outfit": "#DEB887"
+  },
+  "eye_style": "round",
+  "expression": "warm"
+}

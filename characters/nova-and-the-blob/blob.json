@@ -1,0 +1,11 @@
+{
+  "name": "Blob",
+  "colors": {
+    "skin": "#9B59B6",
+    "hair": "#8E44AD",
+    "eyes": "#2C3E50",
+    "outfit": "#9B59B6"
+  },
+  "eye_style": "round",
+  "expression": "cheerful"
+}

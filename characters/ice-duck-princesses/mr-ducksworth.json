@@ -1,0 +1,11 @@
+{
+  "name": "Mr. Ducksworth",
+  "colors": {
+    "skin": "#FFF8DC",
+    "hair": "#FF8C00",
+    "eyes": "#333",
+    "outfit": "#FFD700"
+  },
+  "eye_style": "round",
+  "expression": "dignified"
+}

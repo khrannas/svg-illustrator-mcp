@@ -1,0 +1,11 @@
+{
+  "name": "Princess Daisy",
+  "colors": {
+    "skin": "#FFE4C4",
+    "hair": "#FFB347",
+    "eyes": "#228B22",
+    "outfit": "#FFD700"
+  },
+  "eye_style": "happy",
+  "expression": "happy"
+}

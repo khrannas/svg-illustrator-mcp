@@ -1,0 +1,11 @@
+{
+  "name": "Ollie Owl",
+  "colors": {
+    "skin": "#8B6914",
+    "hair": "#D4A843",
+    "eyes": "#FFD700",
+    "outfit": "#6B4226"
+  },
+  "eye_style": "round",
+  "expression": "wise"
+}

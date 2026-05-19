@@ -1,0 +1,11 @@
+{
+  "name": "Princess Crystal",
+  "colors": {
+    "skin": "#F8D5C0",
+    "hair": "#B8D4E3",
+    "eyes": "#4A90D9",
+    "outfit": "#B0E0E6"
+  },
+  "eye_style": "happy",
+  "expression": "serious"
+}

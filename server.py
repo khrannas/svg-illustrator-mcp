@@ -75,11 +75,11 @@ FEATURES = {
         "closed": '<path d="M{x1},{y} Q{xm},{yd} {x2},{y}" fill="none" stroke="{color}" stroke-width="1.5"/><path d="M{x3},{y} Q{xm2},{yd} {x4},{y}" fill="none" stroke="{color}" stroke-width="1.5"/>',
     },
     "mouth": {
-        "smile": '<path d="M{cx-10},{cy} Q{cx},{cy+12} {cx+10},{cy}" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round"/>',
-        "happy": '<path d="M{cx-12},{cy} Q{cx},{cy+15} {cx+12},{cy}" fill="none" stroke="{color}" stroke-width="2.5" stroke-linecap="round"/>',
+        "smile": '<path d="M{xl},{cy} Q{cx},{cb} {xr},{cy}" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round"/>',
+        "happy": '<path d="M{xl},{cy} Q{cx},{cb} {xr},{cy}" fill="none" stroke="{color}" stroke-width="2.5" stroke-linecap="round"/>',
         "surprised": '<ellipse cx="{cx}" cy="{cy}" rx="5" ry="7" fill="{color}" opacity="0.8"/>',
         "open": '<ellipse cx="{cx}" cy="{cy}" rx="6" ry="8" fill="#333"/>',
-        "sad": '<path d="M{cx-10},{cy} Q{cx},{cy-8} {cx+10},{cy}" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round"/>',
+        "sad": '<path d="M{xl},{cy} Q{cx},{cb} {xr},{cy}" fill="none" stroke="{color}" stroke-width="2" stroke-linecap="round"/>',
     },
 }
 
@@ -128,7 +128,7 @@ def build_character_svg(char: dict, cx: int, cy: int, scale: float = 1.0, expres
     mouth_y = cy + int(10 * scale)
     mouth_feat = FEATURES["mouth"].get(expression if expression in FEATURES["mouth"] else "happy")
     if mouth_feat:
-        parts.append(mouth_feat.format(cx=cx, cy=mouth_y, color="#333"))
+        parts.append(mouth_feat.format(cx=cx, cy=mouth_y, color="#333", xl=cx-12, xr=cx+12, cb=mouth_y+15))
     
     return parts
 

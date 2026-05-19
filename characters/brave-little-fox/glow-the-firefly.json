@@ -1,0 +1,11 @@
+{
+  "name": "Glow the Firefly",
+  "colors": {
+    "skin": "#FFD700",
+    "hair": "#FFFACD",
+    "eyes": "#333",
+    "outfit": "#FFD700"
+  },
+  "eye_style": "round",
+  "expression": "cheerful"
+}

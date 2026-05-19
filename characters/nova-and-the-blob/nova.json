@@ -1,0 +1,11 @@
+{
+  "name": "Nova",
+  "colors": {
+    "skin": "#7EC8E3",
+    "hair": "#4A90D9",
+    "eyes": "#2C3E50",
+    "outfit": "#E67E22"
+  },
+  "eye_style": "round",
+  "expression": "determined"
+}
